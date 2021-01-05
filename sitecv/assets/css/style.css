@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+    transition: all 1.0s;
+    margin: 0;
+
+}
+body{
+    background-color: rgb(4, 23, 58);
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+img{
+    width: 100%;
+}
+h2{
+    text-align: center;
+    padding: 50px 0 50px 0 ;
+    font-weight:bold; 
+}
+h3{
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+h4{
+    font-weight: bold;
+}
+/* Create the parallax scrolling effect */
+header{
+    background-image: url(../img/elegant-white-background.jpg);
+    background-repeat:no-repeat;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;  
+}
+.logo{
+    width: 50px;
+}
+.logo_accueil{
+    margin-top: 100px;
+}
+.logo_accueil h1{
+    font-size: 50px;
+    font-weight: 500;
+    font-weight: bold;
+    color: rgb(4, 23, 58);
+    text-align: center;
+}
+.svg_about{
+    position: relative;
+    margin-top: -104px;
+    color:rgb(4, 23, 58);
+}
+.navbar-nav{
+    justify-content: space-around;
+    width: 100%;
+}
+.navbar{
+    position: fixed;
+    right: 0;
+    left:0;
+    top: 0;
+    z-index: 1;
+}
+#barre_nav .navbar-nav .nav-item a.active{
+    background-color: #04173a !important;
+    color: white !important;
+    border-radius: 10px;
+}
+/* animations js pour la barre de navigation class ajouter dynamiquement */
+.anim-nav {
+    background-color:rgba(226, 228, 231) !important;
+    color: #f1f1f1;
+}
+ul li a{
+    color: black !important;
+}
+ul li a:hover{
+    background-color: #04173a !important;
+    color: white !important;
+    border-radius: 10px;
+}
+
+/* About styles */
+#about{
+    margin:50px;
+    padding: 15px;
+}
+#about p{
+    text-align: center;
+}
+/* .bouton button{
+    border-radius: 9px;
+    width: 200px;
+    background-color: rgba(252, 252, 252, 0.986);
+    text-align: center;
+    
+} */
+.btn1 {
+    background-color: rgba(226, 228, 231);
+    border: none;
+    color: rgb(4, 23, 58);
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 220px;
+  }
+  .btn1 a{
+      text-decoration: none;
+      color: rgb(4, 23, 58) ;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn1:hover {
+    background-color: RoyalBlue;    
+  }
+/* Fin about styles */
+/* Competences styles */
+
+#competences{
+    background-color:rgb(223, 223, 223);
+    color: rgb(4, 23, 58);
+}
+#competences .col-md-6{
+    margin-bottom: 31px;
+
+}
+.container{
+    margin-top: 100px;
+}
+.container h2{
+    text-transform: uppercase;
+}
+.competences h2{
+    text-align: center;
+    
+}
+
+.competences .row .col-sm{
+    margin-bottom:30px;
+
+}
+/*fin Competences styles*/
+/* styles experiences et formation */
+#experiences .col-md-3{
+  height: 111px;
+  border-radius: 50%;
+  color:  rgb(223, 223, 223);
+  line-height: 109px;
+  text-align: center;
+  background:rgb(4, 23, 58);
+  margin-top:13px;
+  font-weight: bold;
+}
+#formation .col-md-3 {
+    height: 111px;
+    border-radius: 50%;
+    color:rgb(4, 23, 58);  
+    line-height: 109px;
+    text-align: center;
+    background:rgb(223, 223, 223);
+    margin-top:13px;
+    font-weight: bold;
+  }
+/* Conteneur principal */
+
+/* Image originale */
+.overlay-image .image {
+    width: 100%;
+    display: block;
+    max-height: 303px;
+    max-width: 390px;
+    overflow: hidden;
+    cursor: pointer !important;
+}
+/* Texte original */
+.overlay-image .text {
+color: black;
+font-size: 24px;
+line-height: 1.5em;
+text-align: center;
+width: 100%;
+}
+/*Hover image et texte*/
+.realisation .row{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.realisation .row .col-md-4{
+    margin-bottom: 30px;
+} 
+
+#experiences{
+    background-color:rgb(223, 223, 223);
+    color: rgb(4, 23, 58);
+    padding-bottom: 1px;
+}
+
+#experiences, #realisations{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#experiences .row, #formation .row{
+    margin-bottom: 50px;
+    margin-left:0;
+    margin-right:0;
+    align-items: center;
+}
+#experiences .col-md-8 p{
+    text-align: center;
+    background-color:rgb(4, 23, 58);
+    color: rgb(223, 223, 223);
+    font-weight: bold;
+}
+#formation .col-md-8 p{
+    text-align: center;
+    background-color:rgb(223, 223, 223);
+    color: rgb(4, 23, 58);
+    font-weight: bold;
+}
+
+
+/* Loisirs styles */
+#loisirs{
+    background-color: rgb(223, 223, 223);
+    color: rgb(4, 23, 58);
+}
+#loisirs img{
+    margin-left: 138px;
+    font-size: 86px;
+    margin-bottom: 15px;
+    width: 152px;
+}
+.loisirs h3{
+    margin-left: 77px;
+}
+#loisirs img:hover{
+    transform: rotate(360deg);
+    color: white;
+}
+/* fin Loisirs styles */
+/* Contact styles */
+
+#contact .container{
+    padding: 40px 40px;
+}
+#contact h2{
+    padding: 30px;
+    margin-bottom: 30px;
+}
+#contact form{
+    padding:20px 20px;
+}
+#contact form button{
+    background-color:rgb(223, 223, 223) ;
+    color:rgb(4, 23, 58);
+    font-weight: bold;
+}
+/* fin contact styles */
+/* fin main styles */
+iframe{
+    width: 100%;
+}
+footer{
+    margin: -30px 0px -44px 0px;
+    background-color:rgb(223, 223, 223) !important;
+    color: rgb(4, 23, 58);
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(4, 23, 58);
+
+}
+.mentions .social{
+    padding: 30px;
+    padding-left: 43px;
+}
+.social i{
+    padding-right: 30px;
+    font-size: 28px;
+    color: rgb(4, 23, 58);
+}
+#back-to-top {
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    background-color: rgba(223, 223, 223, 0.747);
+    width: 50px;
+    height: 50px;
+    line-height: 53px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 30%;
+    color: white;
+    display: none;
+}
+/* Page mention légale  */
+.mentions_legales{
+    background-color:  rgba(223, 223, 223, 0.603);
+    color: rgb(4, 23, 58);
+    padding: 40px;
+}
+.mentions_legales em{
+    color: rgb(6, 1, 34);
+    font-weight: bolder;
+    font-size: 18px;
+    
+}
+.mentions_legales p{
+    text-align: justify ;
+    font-size: 16px;
+}
+
+/* Media queries */
+@media screen and (max-device-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        height: 600px;     
+        overflow-x: hidden;   
+    }
+    .bouton button{
+        border-radius: 9px;
+        width: 179px;
+        background-color: rgba(252, 252, 252, 0.986);
+        text-align: center;
+        margin-left: 37px;
+    }
+    .realisation .row .col-md-4{
+        padding: 30px;
+    }
+    #loisirs img{
+        margin-left: 100px;
+        font-size: 86px;
+        margin-bottom: 15px;
+        width: 152px;
+    }
+    #loisirs h3{
+        margin-left: -40px;
+    }
+   }
+@media only screen and (min-width : 480px) and (max-width: 780px){
+  body{
+        overflow-x: hidden;
+    }
+    header{
+        height: 600px;        
+    }
+    .bouton button{
+        border-radius: 9px;
+        width: 200px;
+        background-color: rgba(252, 252, 252, 0.986);
+        text-align: center;
+        margin-left: 87px;
+    }
+    .realisation .row .col-md-4{
+        padding: 30px ;
+    }
+    .overlay-image .image {
+        width: 100%;
+        display: block;
+        max-height: 303px;
+        max-width: 390px;
+        overflow: hidden;
+        cursor: pointer !important;
+    }
+    
+}

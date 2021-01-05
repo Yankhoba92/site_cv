@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- lien css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- lien fontawesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- lien googlefont -->
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <!-- lien animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- lien Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- lien loading io -->
+    <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+    <link rel="stylesheet" href="assets/css/loading-bar.css">
+    <link rel="stylesheet" href="assets/css/loading-bar.min.css">
+
+    <?php
+        require_once '../inc/init.php'; // on remonte vers le dossier parent avec ../
+    ?>
+    <title>Site cv</title>
+</head>
+<body>
+    
+    <header id="header">
+        <!-- block barre de navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white" id="barre_nav">
+            <a class="navbar-brand" href="#">Bagayoko</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#header">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#realisations">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiences">Expériences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formation">Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#loisirs">Loisirs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <!-- fin block barre de navigation -->
+        <!-- div annonce -->
+        <div class="annonce animate__animated animate__backInDown">
+            <h1>Yankhoba Bagayoko</h1>
+            <h2>Développeur/intégrateur web</h2>
+        </div>
+        <!-- fin div annonce -->
+        
+        
+    </header>
+    <main>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg_about"><path fill="#04173A" fill-opacity="1" d="M0,32L48,42.7C96,53,192,75,288,90.7C384,107,480,117,576,106.7C672,96,768,64,864,53.3C960,43,1056,53,1152,69.3C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <div class="container"><!-- div container-->
+            <section id="about"><!-- section about-->
+                <h2 data-aos="fade-up">A PROPOS</h2>
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <div class="aboutPara">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem eveniet molestias amet alias voluptate praesentium enim, vel eaque vero culpa sapiente id dignissimos aperiam rerum exercitationem assumenda? Reprehenderit, nulla blanditiis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem eveniet molestias amet alias voluptate praesentium enim, vel eaque vero culpa sapiente id dignissimos aperiam rerum exercitationem assumenda? Reprehenderit, nulla blanditiis.</p>
+                            <div class="bouton"><button>Télécharger mon cv</button></div>
+                        </div> 
+                       
+                    </div>
+                    <div class="col-sm-2"></div>        
+                </div>
+            </section><!--section about -->
+        </div> <!-- fin div container -->    
+            <!-- block  competences-->
+            <section id="competences"><!-- section competences -->
+                <div class="container competences"><!-- div competences -->
+                    <h2 data-aos="fade-up">Compétences</h2>
+                    <div class="row"><!-- div row -->
+                        <div class="col-sm">
+                            <h3>HTML</h3>
+                            <div class="progress">
+                                <div id="dynamic" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                    <span id="current-progress"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <h3>CSS</h3>
+                            <div class="progress">
+                                <div id="dynamicCss" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                    <span id="current-progressCss"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  <!-- fin div row --> 
+                    <div class="row"><!-- div row -->
+                        <div class="col-sm">
+                            <h3>Javascript</h3>
+                            <div class="progress">
+                                <div id="dynamicJs" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                    <span id="current-progressJs"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <h3>jQuery</h3>
+                            <div class="progress">
+                                <div id="dynamicJq" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                    <span id="current-progressJq"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- fin div row --> 
+                    <div class="row"> <!-- div row -->
+                        <div class="col-sm">
+                            <h3>PHP</h3>
+                            <div class="progress">
+                                <div id="dynamicPhp" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                    <span id="current-progressPhp"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <h3>SYMFONY</h3>
+                            <div class="progress">
+                                <div id="dynamicSymfony" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                    <span id="current-progressSymfony"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  <!-- fin div row -->
+                </div> <!-- fin div competences -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#04173A" fill-opacity="1" d="M0,224L24,208C48,192,96,160,144,138.7C192,117,240,107,288,106.7C336,107,384,117,432,138.7C480,160,528,192,576,176C624,160,672,96,720,80C768,64,816,96,864,128C912,160,960,192,1008,202.7C1056,213,1104,203,1152,202.7C1200,203,1248,213,1296,208C1344,203,1392,181,1416,170.7L1440,160L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+            </section><!-- fin section competences -->
+            
+            <div class="container">
+                <section id="realisations"><!-- section realisation -->
+                    <div class="realisation">
+                        <h2 data-aos="fade-up">Réalisations</h2>
+                        <div class="col-md-4 "><!-- div col-sm -->
+                                <!-- Button trigger modal -->
+                                <?php
+                                    $query = $pdo->query('SELECT * FROM realisations');// Lecture de la base de données
+                                    while ($realisation = $query->fetch(PDO::FETCH_ASSOC)) {
+                                ?>
+                                <div class="overlay-image modalle" data-toggle="modal" data-target="#staticBackdrop4">
+                                <img class="image" data-aos="fade-right" src="<?= $realisation['photo']?>" alt="text">
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop4" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true"><!-- div modal -->
+                                    <div class="modal-dialog "><!-- div modal-dialog -->
+                                        <div class="modal-content"><!-- div modal-content -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                                <div class="modal-body overlay-image">
+                                                <h4 class="modal-title text" id="staticBackdropLabel2"><?= $realisation['titre']?></h4>
+                                                <div class="text"><?= $realisation['description']?></div>
+                                                <img class="image" src="<?= $realisation['fiche']?>" alt="text">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- fin div modal-content -->
+                                    </div><!-- fin div modal-dialog -->
+                                </div><!-- fin div modal -->
+                                <?php
+                                    }
+                                ?>
+                            </div><!-- fin div col-md-4 -->
+                                <!-- Button trigger modal -->
+                                <div class="overlay-image modalle" data-toggle="modal" data-target="#staticBackdrop4">
+                                <img class="image" data-aos="fade-right" src="assets/img/Blog.png" alt="text">
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop4" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true"><!-- div modal -->
+                                    <div class="modal-dialog "><!-- div modal-dialog -->
+                                        <div class="modal-content"><!-- div modal-content -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                                <div class="modal-body overlay-image">
+                                                <h4 class="modal-title text" id="staticBackdropLabel2">Blog</h4>
+                                                <div class="text">Page réaliser en HTML&CSS a partir d'une maquette</div>
+                                                <img class="image" src="assets/img/Blog.png" alt="text">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- fin div modal-content -->
+                                    </div><!-- fin div modal-dialog -->
+                                </div><!-- fin div modal -->
+                            </div><!-- fin div col-md-4 -->
+                            <div class="col-md-4"><!--div col-md-4 -->
+                                <!-- Button trigger modal -->
+                                <div class="overlay-image" data-toggle="modal" data-target="#staticBackdrop7">
+                                <img class="image" src="assets/img/licorne.png" alt="image licorne">
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop7" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel7" aria-hidden="true"><!-- div modal -->
+                                    <div class="modal-dialog "><!-- div modal-dialog -->
+                                        <div class="modal-content"><!-- div modal-content -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body overlay-image">
+                                                <h4 class="modal-title text" id="staticBackdropLabel7">Licorne</h4>
+                                                <div class="text">Page réaliser en HTML&CSS a partir d'une maquette</div>
+                                                <img class="image" src="assets/img/licorne.png" alt="text">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- fin div modal-content -->
+                                    </div><!-- fin div modal-dialog -->
+                                </div><!-- fin div modal -->
+                            </div><!-- fin div col-md-4 -->
+                            <div class="col-md-4"><!-- div col-md-4 -->
+                                <!-- Button trigger modal -->
+                                <div class="overlay-image" data-toggle="modal" data-target="#staticBackdrop">
+                                <img class="image" data-aos="fade-left" src="assets/img/box_shop.png" alt="text">
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true"><!-- fin div modal -->
+                                    <div class="modal-dialog "><!-- div modal-dialog -->
+                                        <div class="modal-content"><!-- div modal-content -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body overlay-image">
+                                            <h4 class="modal-title text" id="staticBackdropLabel1">Blog</h4>
+                                            <div class="text">Page réaliser en HTML&CSS a partir d'une maquette</div>
+                                                <img class="image" src="assets/img/box_shop.png" alt="text">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- fin div modal-content -->
+                                    </div><!-- fin div modal-dialog -->
+                                </div><!-- fin div modal -->
+                            </div><!-- fin div col-md-4 -->
+                        </div><!-- fin row realisation -->
+                        <div class="row"><!-- row realisation -->
+                            <div class="col-md-4"><!-- div col-md-4 -->
+                                <!-- Button trigger modal -->
+                                <div class="overlay-image" data-toggle="modal" data-target="#staticBackdrop2">
+                                <img class="image" data-aos="fade-right" src="assets/img/resto1.jpg" alt="text">
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true"><!--div modal -->
+                                    <div class="modal-dialog "><!-- div modal-dialog -->
+                                        <div class="modal-content"><!-- div modal-content -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body overlay-image">
+                                                <h4 class="modal-title text" id="staticBackdropLabel4">Restaurant</h4>
+                                                <div class="text">Page réaliser en HTML&CSS a partir d'une maquette</div>
+                                                <img class="image" src="assets/img/resto1.jpg" alt="text">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- fin div modal-content -->
+                                    </div><!-- fin div modal-dialog -->
+                                </div><!-- fin div modal -->
+                            </div><!-- fin div col-md-4 -->
+                            <div class="col-md-4"><!-- div col-md-4 -->
+                                <!-- Button trigger modal -->
+                                <div class="overlay-image" data-toggle="modal" data-target="#staticBackdrop5">
+                                <img class="image" src="assets/img/resto2.jpg" alt="text">
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop5" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel5" aria-hidden="true"><!-- div modal -->
+                                    <div class="modal-dialog "><!-- div modal-dialog -->
+                                        <div class="modal-content"> <!-- div modal-content -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body overlay-image">
+                                                <h4 class="modal-title text" id="staticBackdropLabel5">Blog</h4>
+                                                <div class="text">Page réaliser en HTML&CSS a partir d'une maquette</div>
+                                                <img class="image" src="assets/img/resto2.jpg" alt="text">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- fin div modal-content -->
+                                    </div><!-- fin div modal-dialog -->
+                                </div><!-- fin div modal -->
+                            </div><!-- fin div col-md-4 -->
+                            <div class="col-md-4"><!-- div col-md-4 -->
+                                <!-- Button trigger modal -->
+                                <div class="overlay-image" data-toggle="modal" data-target="#staticBackdrop3">
+                                <img class="image overlay-image" data-aos="fade-left" src="assets/img/Blog.png" alt="text">
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop3"           data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true"> <!-- div modal -->
+                                    <div class="modal-dialog"><!-- div modal-dialog -->
+                                        <div class="modal-content"><!-- fin div modal-content -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body overlay-image">
+                                                <h4 class="modal-title text" id="staticBackdropLabel3">Blog</h4>
+                                                <div class="text">Page réaliser en HTML&CSS a partir d'une maquette</div>
+                                                <img class="image" src="assets/img/Blog.png" alt="text">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- fin div modal-content -->
+                                    </div><!-- fin div modal-dialog -->
+                                </div><!-- fin div modal -->
+                            </div><!-- fin div col-md-4 -->
+                        </div><!-- fin row realisation -->
+                    </div><!-- fin div realisation -->
+                    
+                </section><!-- fin section realisation -->
+                <section id="experiences"><!--  section experiences -->
+                    <div class="experiences"><!-- div experiences -->
+                        <h2 data-aos="fade-up">Expériences</h2>
+                        <div class="row"><!-- row experiences -->
+                            <div class="col-3" data-aos="fade-down-right">
+                                <p>Juin 2020</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-8" data-aos="fade-down-left">
+                                <h3>Developpement web</h3>
+                                <p>Création des pages web avec différentes langages: HTML , CSS , PHP, SYMFONY, Javascript , jQuery et Ajax.</p>
+                            </div>
+                        </div>
+                        <div class="row"><!-- row experiences -->
+                            <div class="col-3" data-aos="fade-down-right">
+                                <p>Avril 2019</p>
+                            </div>
+                                <div class="col-1"></div>
+                                <div class="col-8" data-aos="fade-down-left">
+                                    <h3>Stage restauration collective</h3>
+                                    <p>Fabrication en restauration, application règles d'hygiène,accueil des clients</p>
+                                </div>
+                        </div><!-- row experiences -->
+                    </div><!-- fin div experiences -->
+                </section><!-- fin section experiences -->
+            </div><!-- fin div container -->
+        <div><!-- div container -->
+            <section id="formation"><!--  section experiences -->
+                <div class="container fomartions"><!-- div formations -->
+                    <h2 data-aos="fade-up">Formations</h2>
+                    <div class="row"><!-- row experiences -->
+                        <div class="col-3" data-aos="fade-down-right">
+                            <p>Septembre 2019 - Juin 2020</p>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-8" data-aos="fade-down-left">
+                            <h3>CFA de CNAM (Saint-Denis)</h3>
+                            <p>Culture  Numérique : Bureautique, codage, réalisation podcast, revue de presse et vidéo élaboration du projet professionnel</p>
+                        </div>
+                        
+                    </div><!-- fin row experiences -->
+                    <div class="row"><!-- row experiences -->
+                        <div class="col-3" data-aos="fade-down-right">
+                            <p>Mai 2019 - Juillet 2019</p>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-8" data-aos="fade-down-left">
+                            <h3>G2R-formation(Paris 11 ème )</h3>
+                            <p>Accès à la qualification sur la maintenance informatique et bureautique</p>
+                        </div>
+                        
+                    </div><!-- fin row experiences -->
+                    <div class="row"><!-- row experiences -->
+                        <div class="col-3" data-aos="fade-down-right">
+                            <p>Avril 2019 - Juin 2020</p>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-8" data-aos="fade-down-left">
+                            <h3>E2C (Ecole de la 2ème Chance )(Clichy)</h3>
+                            <p>Remise à niveau et élaboration du projet professionnel</p>
+                        </div>
+                    </div><!-- fin row experiences -->
+                    <div class="row"><!-- row experiences -->
+                        <div class="col-3" data-aos="fade-down-right">
+                            <p>2018-2019</p>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-8" data-aos="fade-down-left">
+                            <h3>Lyçée</h3>
+                            <p>Les Leaders (Sénégal)</p>
+                        </div>
+                    </div>
+                </div><!-- fin div formations -->
+            </section><!-- fin section formations -->
+            <section id="loisirs"><!-- section loisirs -->
+                <div class="loisirs"><!-- div loisirs-->
+                    <h2 data-aos="fade-up">Loisirs</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <i class="fas fa-bread-slice"></i>                            <h3>Cuisine</h3>
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <i class="fas fa-futbol"></i>
+                            <h3>Football</h3>
+                        </div>
+                    </div>
+                </div><!-- fin div loisirs-->
+            </section><!-- fin section loisirs -->
+        </div><!-- fin div container-->
+        <!--Section: Contact v.2-->
+            <section class="mb-4" id="contact"><!--Section heading-->
+                <div class="container"> <!-- div conainer -->             
+                <form id="contact-form" name="contact-form" method="POST" data-aos="fade-right">
+                                <h2 class="h2-responsive font-weight-bold text-center my-4" data-aos="fade-up">Contact</h2>
+                                <!--Section description-->
+                                <p class="text-center w-responsive mx-auto mb-5">Avez vous des questions? N'hesitez pas à me contacter</p>
+                    <div class="row">        
+                        <div class="col-md-9 mb-md-0 mb-5"><!--Grid column-->
+                                <!--Grid row-->
+                            
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-6" >
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="name" name="name" class="form-control">
+                                            <label for="name" class="">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="email" name="email" class="form-control">
+                                            <label for="email">Email</label>
+                                        </div>
+                                    </div>
+                                </div><!-- fin div row --> 
+                                    <!--Grid row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="subject" name="subject" class="form-control">
+                                            <label for="subject" >Sujet</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <!--Grid row-->
+                                    <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <textarea id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                            <label for="message">Description</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <!--Grid row-->
+                            </form>
+                            <div class="text-center text-md-left">
+                                <a class=" btn btn-primary">Envoyer</a>
+                            </div>
+
+                            <div class="status"></div>
+                            <!--Grid column-->
+                        </div>
+                        <div class="col-md-3 text-center asside" data-aos="fade-left">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                    <p>Colombes</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone mt-4 fa-2x"></i>
+                                    <p>O7 64 17 21 56</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope mt-4 fa-2x"></i>
+                                    <p>bagayoko.yan@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                            <!--Grid column-->
+                    </div>
+                </div><!-- div conainer --> 
+            </section><!-- fin Section: Contact-->
+            
+    </main>
+    
+    <footer>
+        
+        <h2 data-aos="fade-up"><i class="fas fa-map-marker-alt"></i>Colombes</h2>
+        <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.0347634563086!2d2.26422811518721!3d48.93377967929502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e665e15629b457%3A0xb73537e2d64e64bb!2s112%20Avenue%20de%20Stalingrad%2C%2092700%20Colombes!5e0!3m2!1sfr!2sfr!4v1606384154425!5m2!1sfr!2sfr" width="100" height="500" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="mentions">
+            <div class="social">
+            <a href="https://github.com/Yankhoba92" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/Yankhoba92" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>© 20 Portfolio|Tous droits reservés| Designed by Yankhoba Bagayoko|Mentions légals</p>
+        </div>
+        
+
+    </footer>
+
+    <a id="back-to-top" href="#top"><i class="fas fa-angle-double-up"></i></a>
+
+    <!-- script bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- script js -->
+    <script src="assets/main/script.js"></script>
+    <!-- script fontawesome -->
+    <script src="https://kit.fontawesome.com/04fd12fbfd.js" crossorigin="anonymous"></script> 
+    <!-- script Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/main/aos.js"></script>
+    <!-- script loading -->
+    <script src="loading-bar.js"></script>
+    <script src="assets/main/loading.js"></script>
+    <script src="assets/main/loading-bar.js"></script>
+
+
+
+</body>
+</html>

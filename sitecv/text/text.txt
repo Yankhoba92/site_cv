@@ -1,0 +1,52 @@
+------- Recherche -------------------
+
+    - Fonctionnalité compatible sur mobile
+    - S'informer au prés du client sur la partie actualité et compteurs chiffres clés
+    - Call to action recherche 
+    - Pour le passage de commande éclaircir sur quelle page on doit être redirigé
+    - Les documents à télécharger
+    - Facturation comptabilité 
+
+------- Code couleur --------------
+
+    -Theme couleurs : (rouge : #e73c1d) et (vert : #329a37)
+
+// Wordpress
+id: yankhoba
+mdp: Bagayoko.92
+    :Bakha_lofficial.92
+mail : bagayoko.yan@gmail.com
+
+// REUNION
+
+Serve d'annimation de réseau 
+Partie forum
+Actu: initiative solidaire, mini catalogue 
+
+4 couleurs : vert, orange,
+
+
+Bonjour 
+    Les contenues ( images)
+    A propos : Des choses à rajouter sur la description de leur entreprise
+    Barre de nav 
+    les réseaux
+
+Bonjour Madame ...,
+
+Nous revenons vers vous 
+
+//////////////////////
+C'est en forgeant qu'on devient forgeron et à force de forger on devient un bon forgeron
+
+Arrivé en France en 2019, j'ai intégrer l'école de la deuxième chance (E2C) Clichy  pour une remise à niveau et une élaboration de mon projet professionnel où ils m'ont aidé à trouvé une formation dans l'informatique (G2R-formation) pour une accès à la qualification sur la maintenance informatique et bureautique et de là j'ai eu une attirance dans le monde de la programmation. Ensuite j'ai rejoint la formation passe numérique au  CNAM  pour compléter  mes connaissances numériques: bureautique, codage, réalisation podcast, revue de presse, montage et tournage vidéo.
+Attiré par la création de par mes talents de cuisinier j'aipassion ma motivée à rejoindre la formation intégrateur developpeur web au Pôles pour me concentrer sur la programmation.
+
+
+Depuis Octobre 2019 je suis à la recherche d'un stage de fin d'études.
+
+Voulant travaillé dans le monde de l'informatique depuis mon jeune âge mais je savais pas dans quel domaine m'orienter.
+20 ans et passionnée par la programmation au fils de mon parcours
+je suis développeur web.
+
+Determiner
